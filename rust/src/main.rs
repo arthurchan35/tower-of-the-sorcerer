@@ -4,14 +4,18 @@ use tower_of_the_sorcerer::{game::GamePlugin, input::InputPlugin, render::Render
 
 fn main() {
     App::new()
-        .add_plugins(DefaultPlugins.set(WindowPlugin {
-            primary_window: Some(Window {
-                title: "Tower of the Sorcerer — Floor 1".into(),
-                resolution: (640u32, 600u32).into(),
-                ..default()
-            }),
-            ..default()
-        }))
+        .add_plugins(
+            DefaultPlugins
+                .set(ImagePlugin::default_nearest())
+                .set(WindowPlugin {
+                    primary_window: Some(Window {
+                        title: "Tower of the Sorcerer — Floor 1".into(),
+                        resolution: (800u32, 800u32).into(),
+                        ..default()
+                    }),
+                    ..default()
+                }),
+        )
         .add_plugins((GamePlugin, InputPlugin, RenderPlugin))
         .run();
 }

@@ -110,7 +110,6 @@ fn advance_turn(
         return;
     };
     for intent in intents.read() {
-        info!("turn: {:?}", intent.0);
         let result = step_player(&mut floor, &mut stats, &mut pos, intent.0);
         status.0 = describe(&result);
         if matches!(result, ActionResult::EnteredStairs) {

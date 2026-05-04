@@ -60,9 +60,10 @@ rust/
     │   └── mod.rs          GamePlugin, GameSetup SystemSet, Player marker, StatusMessage resource
     ├── input.rs            InputPlugin, MoveIntent message, keyboard system
     └── render/             Bevy 2D rendering layer (the only Bevy-coupled code besides input + plugins)
-        ├── tiles.rs        camera, tile sprites (placeholder colors), player sprite, sync systems
+        ├── sprite_catalog.rs SpriteCatalog resource, atlas loader (TextureAtlasLayout + image handles)
+        ├── tiles.rs        camera, tile sprites via SpriteCatalog (color fallback when key missing), player sprite, sync systems
         ├── hud.rs          UI Node with stats label + status label
-        └── mod.rs          RenderPlugin (Startup + Update + OnEnter(state) handlers)
+        └── mod.rs          RenderPlugin (Startup + Update + OnEnter(state) handlers, RenderSetup SystemSet)
 ```
 
 ### Architectural conventions
@@ -74,7 +75,8 @@ rust/
 - **`StatusMessage`** is a separate `Resource` for the UI banner — UI concerns don't leak into the game state.
 - **Pure-Rust action layer**: `game::action::step_player` takes plain `&mut` references and returns an `ActionResult` enum; the Bevy system in `game/mod.rs` is the only place that wires it to ECS. Combat tests call it without spinning up an `App`.
 - **Bevy 0.18 events**: this version renamed events to messages — `Event` → `Message`, `EventReader/Writer` → `MessageReader/Writer`, `add_event` → `add_message`. Use the new names.
-- **Asset loading**: floor data is `include_str!`-ed into the binary at compile time. Replace with `AssetServer` once we want hot-reload.
+- **Asset loading**: data files (`map.json`, `enemy_stats.json`, `sprite_atlas.json`) are `include_str!`-ed into the binary at compile time. Sprite PNGs in `assets/sprites/` are loaded at runtime via Bevy's `AssetServer`. Switch the data files to `AssetServer` only when hot-reload becomes worthwhile.
+- **Sprite atlas**: 32px source art is rendered at `TILE_PX = 64` (2× integer scale) with `ImagePlugin::default_nearest()` for crisp pixel-art. The `SpriteCatalog` resource is built in a Startup system before `spawn_camera_and_tiles` / `outfit_player`; both use `RenderSetup` SystemSet ordering to depend on it. Spritesheets are 4×4 grids of 32×32 frames (with `Environment-Stairs-Up.png` as a 1×1 exception); per-sheet grid dimensions live in `sprite_atlas.json`.
 
 ### Floor-1 enemy stats
 
@@ -100,7 +102,7 @@ Concrete defaults this project commits to:
 
 ## TODO / future work
 
-- **Replace placeholder colored tiles with real artwork.** Tiles and the player are currently solid-color squares (`render::tiles::tile_color`). Pick a sprite source, add to `rust/assets/sprites/`, switch `Sprite { color, .. }` to `Sprite { image: asset_server.load("..."), .. }`.
+- **Add artwork for tiles not yet in the atlas.** Floor 1 entities have real sprites (`rust/assets/sprites/`, mapped via `assets/data/sprite_atlas.json`). `render::tiles::tile_atlas_key` returns `None` for tiles we don't have keys for yet (blue/red doors/keys, NPCs). Those fall back to colored squares via `fallback_color_sprite`. When new floors need them, add the catalog entry + atlas key.
 - **Polish the HUD to match the screenshot reference.** Current HUD is a top-anchored row; the reference has left/right side panels (Tower / HP / ATK / DEF / GOLD on the left; weapon / shield / character portrait on the right).
 - **Multi-floor progression.** `FLOOR_TO_PLAY` is hard-coded to 1; stairs end the run. Adding floor 2+ needs an `OnEnter(AppState::FloorCleared)` handler that swaps the `Floor` resource for the next floor's tile set and repositions the Player.
 - **Implement the unhandled item kinds.** `ItemKind::Unimplemented` covers items whose effect we haven't wired up (e.g. the teleport scepter). When floor coverage demands them, expand `ItemKind` and `apply_item`.
