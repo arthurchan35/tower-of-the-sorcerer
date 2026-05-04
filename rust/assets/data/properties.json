@@ -1,0 +1,1212 @@
+{
+  "target": [
+    {
+      "Type": 0,
+      "ID": 1,
+      "Name": "Yellow Door",
+      "Info": "",
+      "Path": "Environments/Environment-Door-1-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 2,
+      "Name": "Blue Door",
+      "Info": "",
+      "Path": "Environments/Environment-Door-2-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 3,
+      "Name": "Red Door",
+      "Info": "",
+      "Path": "Environments/Environment-Door-3-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 4,
+      "Name": "Magic Door",
+      "Info": "Opens after defeating the guards",
+      "Path": "Environments/Environment-Door-4-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 5,
+      "Name": "Magic Door",
+      "Info": "Opens after defeating the octopus",
+      "Path": "Environments/Environment-Door-4-2",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 6,
+      "Name": "Wall",
+      "Info": "",
+      "Path": "Environments/Environment-Wall-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 7,
+      "Name": "Stairs Up",
+      "Info": "",
+      "Path": "Environments/Environment-Stairs-Up",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 8,
+      "Name": "Stairs Down",
+      "Info": "",
+      "Path": "Environments/Environment-Stairs-Down",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 9,
+      "Name": "Iron Door",
+      "Info": "",
+      "Path": "Environments/Environment-Door-5-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 10,
+      "Name": "Floor 3 Event Tile",
+      "Info": "Triggers Demon King event",
+      "Path": "Environments/Environment-Floor-Event-Level3",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 11,
+      "Name": "Iron Door",
+      "Info": "Opens after defeating Floor 2 guards",
+      "Path": "Environments/Environment-Door-5-2",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 12,
+      "Name": "Breakable Wall",
+      "Info": "",
+      "Path": "Environments/Environment-Door-Wall",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 13,
+      "Name": "Floor 10 Event Tile",
+      "Info": "Triggers floor boss event",
+      "Path": "Environments/Environment-Floor-Event-Level10-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 14,
+      "Name": "Floor 10 Event Tile",
+      "Info": "Triggers thief event",
+      "Path": "Environments/Environment-Floor-Event-Level10-2",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 15,
+      "Name": "Lava",
+      "Info": "Impassable",
+      "Path": "Environments/Environment-Barrier-1-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 16,
+      "Name": "Floor 14 Special Wall",
+      "Info": "Opens by killing the guards",
+      "Path": "Environments/Environment-Special-Wall-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 17,
+      "Name": "Floor 20 Event Tile",
+      "Info": "Spawns a vampire",
+      "Path": "Environments/Environment-Floor-Event-Level20-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 18,
+      "Name": "Magic Door",
+      "Info": "Opens after defeating the vampire",
+      "Path": "Environments/Environment-Door-4-3",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 19,
+      "Name": "Hidden Wall",
+      "Info": "Opens on touch",
+      "Path": "Environments/Environment-HideWall",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 20,
+      "Name": "Magic Door",
+      "Info": "Opens after defeating six slimes",
+      "Path": "Environments/Environment-Door-4-4",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 21,
+      "Name": "Floor 32 Event Tile",
+      "Info": "Spawns Knight Captain",
+      "Path": "Environments/Environment-Floor-Event-Level32-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 22,
+      "Name": "Magic Door",
+      "Info": "Opens after defeating four warriors",
+      "Path": "Environments/Environment-Door-4-5",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 23,
+      "Name": "Floor 33 Event Tile",
+      "Info": "Spawns walls",
+      "Path": "Environments/Environment-Floor-Event-Level33-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 24,
+      "Name": "Floor 33 Event Tile",
+      "Info": "Spawns a magic door",
+      "Path": "Environments/Environment-Floor-Event-Level33-2",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 25,
+      "Name": "Floor 34 Special Wall",
+      "Info": "Opens by killing the guards",
+      "Path": "Environments/Environment-Special-Wall-2",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 26,
+      "Name": "Magic Door",
+      "Info": "Opens by killing the dragon",
+      "Path": "Environments/Environment-Door-4-6",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 27,
+      "Name": "Floor 35 Special Wall",
+      "Info": "Opens by saving the thief",
+      "Path": "Environments/Environment-Special-Wall-3",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 28,
+      "Name": "Floor 38 Event Tile",
+      "Info": "Spawns walls",
+      "Path": "Environments/Environment-Floor-Event-Level38-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 29,
+      "Name": "Floor 39 Special Wall",
+      "Info": "Controls treasure appearance",
+      "Path": "Environments/Environment-Special-Wall-4",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 30,
+      "Name": "Floor 40 Event Tile",
+      "Info": "Knight Captain event",
+      "Path": "Environments/Environment-Floor-Event-Level40-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 31,
+      "Name": "Magic",
+      "Info": "Magic effect",
+      "Path": "Environments/Other-Magic-8",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 32,
+      "Name": "Floor 41 Special Wall",
+      "Info": "Controls treasure appearance",
+      "Path": "Environments/Environment-Special-Wall-5",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 33,
+      "Name": "Floor 42 Event Tile",
+      "Info": "Knight Captain event",
+      "Path": "Environments/Environment-Floor-Event-Level42-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 34,
+      "Name": "Magic Door",
+      "Info": "Opens by killing the right-side guards",
+      "Path": "Environments/Environment-Door-4-7",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 35,
+      "Name": "Floor 49 Event Tile",
+      "Info": "Demon King event",
+      "Path": "Environments/Environment-Floor-Event-Level49-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 36,
+      "Name": "Floor 25 Event Tile",
+      "Info": "Archmage dialogue",
+      "Path": "Environments/Environment-Floor-Event-Level25-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 37,
+      "Name": "Floor 24 Event Tile",
+      "Info": "After speaking with the Princess, teleports to Floor 50",
+      "Path": "Environments/Environment-Floor-Event-Level24-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 0,
+      "ID": 38,
+      "Name": "Starscape",
+      "Info": "Impassable",
+      "Path": "Environments/Environment-Barrier-2-1",
+      "IconPath": ""
+    },
+    {
+      "Type": 1,
+      "ID": 1,
+      "Name": "Yellow Key",
+      "Info": "Opens yellow doors",
+      "Path": "Items/Item-Key-1",
+      "IconPath": "Icons/Item-Key-1"
+    },
+    {
+      "Type": 1,
+      "ID": 2,
+      "Name": "Blue Key",
+      "Info": "Opens blue doors",
+      "Path": "Items/Item-Key-2",
+      "IconPath": "Icons/Item-Key-2"
+    },
+    {
+      "Type": 1,
+      "ID": 3,
+      "Name": "Red Key",
+      "Info": "Opens red doors",
+      "Path": "Items/Item-Key-3",
+      "IconPath": "Icons/Item-Key-3"
+    },
+    {
+      "Type": 1,
+      "ID": 4,
+      "Name": "Master Key",
+      "Info": "Opens every yellow door on this floor",
+      "Path": "Items/Item-Key-4",
+      "IconPath": "Icons/Item-Key-4"
+    },
+    {
+      "Type": 1,
+      "ID": 5,
+      "Name": "Small Health Potion",
+      "Info": "+200 HP",
+      "Path": "Items/Item-Bottle-1",
+      "IconPath": "Icons/Item-Bottle-1"
+    },
+    {
+      "Type": 1,
+      "ID": 6,
+      "Name": "Large Health Potion",
+      "Info": "+500 HP",
+      "Path": "Items/Item-Bottle-2",
+      "IconPath": "Icons/Item-Bottle-2"
+    },
+    {
+      "Type": 1,
+      "ID": 7,
+      "Name": "Red Gem",
+      "Info": "+3 Attack",
+      "Path": "Items/Item-Equipment-Other-1",
+      "IconPath": "Icons/Item-Equipment-Other-1"
+    },
+    {
+      "Type": 1,
+      "ID": 8,
+      "Name": "Blue Gem",
+      "Info": "+3 Defense",
+      "Path": "Items/Item-Equipment-Other-2",
+      "IconPath": "Icons/Item-Equipment-Other-2"
+    },
+    {
+      "Type": 1,
+      "ID": 9,
+      "Name": "Pharaoh's Scepter",
+      "Info": "Teleports between staircases",
+      "Path": "Items/Item-Artifact-3",
+      "IconPath": "Icons/Item-Artifact-3"
+    },
+    {
+      "Type": 1,
+      "ID": 10,
+      "Name": "Monster Manual",
+      "Info": "View monster stats",
+      "Path": "Items/Item-Book",
+      "IconPath": "Icons/Item-Book"
+    },
+    {
+      "Type": 1,
+      "ID": 11,
+      "Name": "Notepad",
+      "Info": "Records dialogue",
+      "Path": "Items/Item-Notepad",
+      "IconPath": "Icons/Item-Notepad"
+    },
+    {
+      "Type": 1,
+      "ID": 12,
+      "Name": "Flying Device (Removed)",
+      "Info": "",
+      "Path": "",
+      "IconPath": ""
+    },
+    {
+      "Type": 1,
+      "ID": 13,
+      "Name": "Pickaxe",
+      "Info": "Breaks the adjacent walls",
+      "Path": "Items/Item-Other-1",
+      "IconPath": "Icons/Item-Other-1"
+    },
+    {
+      "Type": 1,
+      "ID": 14,
+      "Name": "Earthquake Scroll",
+      "Info": "Destroys every wall",
+      "Path": "Items/Item-Other-2",
+      "IconPath": "Icons/Item-Other-2"
+    },
+    {
+      "Type": 1,
+      "ID": 15,
+      "Name": "Freeze Charm",
+      "Info": "Freezes the adjacent lava",
+      "Path": "Items/Item-Artifact-4",
+      "IconPath": "Icons/Item-Artifact-4"
+    },
+    {
+      "Type": 1,
+      "ID": 16,
+      "Name": "Bomb",
+      "Info": "Kills the adjacent monsters",
+      "Path": "Items/Item-Other-6",
+      "IconPath": "Icons/Item-Other-6"
+    },
+    {
+      "Type": 1,
+      "ID": 17,
+      "Name": "Holy Water",
+      "Info": "Restores HP equal to Attack + Defense",
+      "Path": "Items/Item-Bottle-3",
+      "IconPath": "Icons/Item-Bottle-3"
+    },
+    {
+      "Type": 1,
+      "ID": 18,
+      "Name": "Lucky Coin",
+      "Info": "Doubles gold from kills",
+      "Path": "Items/Item-Artifact-1",
+      "IconPath": "Icons/Item-Artifact-1"
+    },
+    {
+      "Type": 1,
+      "ID": 19,
+      "Name": "Cross",
+      "Info": "Doubles damage against orcs and vampires",
+      "Path": "Items/Item-Artifact-2",
+      "IconPath": "Icons/Item-Artifact-2"
+    },
+    {
+      "Type": 1,
+      "ID": 20,
+      "Name": "Dragon Slayer",
+      "Info": "Doubles damage against magic dragons",
+      "Path": "Items/Item-Artifact-5",
+      "IconPath": "Icons/Item-Artifact-5"
+    },
+    {
+      "Type": 1,
+      "ID": 21,
+      "Name": "Flying Device - Up",
+      "Info": "Flies to the floor above",
+      "Path": "Items/Item-Other-5",
+      "IconPath": "Icons/Item-Other-5"
+    },
+    {
+      "Type": 1,
+      "ID": 22,
+      "Name": "Flying Device - Down",
+      "Info": "Flies to the floor below",
+      "Path": "Items/Item-Other-4",
+      "IconPath": "Icons/Item-Other-4"
+    },
+    {
+      "Type": 1,
+      "ID": 23,
+      "Name": "Flying Device - Mirror",
+      "Info": "Flies to the mirrored position on the current map",
+      "Path": "Items/Item-Other-3",
+      "IconPath": "Icons/Item-Other-3"
+    },
+    {
+      "Type": 1,
+      "ID": 24,
+      "Name": "Iron Sword",
+      "Info": "+10 Attack",
+      "Path": "Items/Item-Equipment-Sword-1",
+      "IconPath": "Icons/Item-Equipment-Sword-1"
+    },
+    {
+      "Type": 1,
+      "ID": 25,
+      "Name": "Iron Shield",
+      "Info": "+10 Defense",
+      "Path": "Items/Item-Equipment-Shield-1",
+      "IconPath": "Icons/Item-Equipment-Shield-1"
+    },
+    {
+      "Type": 1,
+      "ID": 26,
+      "Name": "Silver Sword",
+      "Info": "+20 Attack",
+      "Path": "Items/Item-Equipment-Sword-2",
+      "IconPath": "Icons/Item-Equipment-Sword-2"
+    },
+    {
+      "Type": 1,
+      "ID": 27,
+      "Name": "Silver Shield",
+      "Info": "+20 Defense",
+      "Path": "Items/Item-Equipment-Shield-2",
+      "IconPath": "Icons/Item-Equipment-Shield-2"
+    },
+    {
+      "Type": 1,
+      "ID": 28,
+      "Name": "Knight Sword",
+      "Info": "+40 Attack",
+      "Path": "Items/Item-Equipment-Sword-3",
+      "IconPath": "Icons/Item-Equipment-Sword-3"
+    },
+    {
+      "Type": 1,
+      "ID": 29,
+      "Name": "Knight Shield",
+      "Info": "+40 Defense",
+      "Path": "Items/Item-Equipment-Shield-3",
+      "IconPath": "Icons/Item-Equipment-Shield-3"
+    },
+    {
+      "Type": 1,
+      "ID": 30,
+      "Name": "Jade Sword",
+      "Info": "+50 Attack",
+      "Path": "Items/Item-Equipment-Sword-4",
+      "IconPath": "Icons/Item-Equipment-Sword-4"
+    },
+    {
+      "Type": 1,
+      "ID": 31,
+      "Name": "Jade Shield",
+      "Info": "+50 Defense",
+      "Path": "Items/Item-Equipment-Shield-4",
+      "IconPath": "Icons/Item-Equipment-Shield-4"
+    },
+    {
+      "Type": 1,
+      "ID": 32,
+      "Name": "Sacred Sword",
+      "Info": "+100 Attack",
+      "Path": "Items/Item-Equipment-Sword-5",
+      "IconPath": "Icons/Item-Equipment-Sword-5"
+    },
+    {
+      "Type": 1,
+      "ID": 33,
+      "Name": "Sacred Shield",
+      "Info": "+100 Defense; immune to magic attacks",
+      "Path": "Items/Item-Equipment-Shield-5",
+      "IconPath": "Icons/Item-Equipment-Shield-5"
+    },
+    {
+      "Type": 2,
+      "ID": 1,
+      "Name": "Player",
+      "Info": "",
+      "Path": "Actor/Actor-Player-1",
+      "IconPath": "Icons/Actor-Player-1"
+    },
+    {
+      "Type": 2,
+      "ID": 2,
+      "Name": "Old Man",
+      "Info": "",
+      "Path": "Actor/Actor-NPC-1-1",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 3,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 3 Monster Manual event",
+      "Path": "Actor/Actor-NPC-1-2",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 4,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 6 dialogue",
+      "Path": "Actor/Actor-NPC-1-3",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 5,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 4 dialogue",
+      "Path": "Actor/Actor-NPC-1-4",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 6,
+      "Name": "Merchant",
+      "Info": "",
+      "Path": "Actor/Actor-NPC-2-1",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 7,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 6 shop and hints",
+      "Path": "Actor/Actor-NPC-2-2",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 8,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 7 shop and hints",
+      "Path": "Actor/Actor-NPC-2-3",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 9,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 12 shop and hints",
+      "Path": "Actor/Actor-NPC-2-4",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 10,
+      "Name": "Shady Merchant",
+      "Info": "Triggers Floor 12 special shop",
+      "Path": "Actor/Actor-NPC-2-5",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 11,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 15 shop and hints",
+      "Path": "Actor/Actor-NPC-2-6",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 12,
+      "Name": "Thief",
+      "Info": "",
+      "Path": "Actor/Actor-NPC-3-1",
+      "IconPath": "Icons/Actor-NPC-3-1"
+    },
+    {
+      "Type": 2,
+      "ID": 13,
+      "Name": "Thief",
+      "Info": "Triggers Floor 2 escape event",
+      "Path": "Actor/Actor-NPC-3-2",
+      "IconPath": "Icons/Actor-NPC-3-1"
+    },
+    {
+      "Type": 2,
+      "ID": 14,
+      "Name": "Thief",
+      "Info": "Triggers Floor 15 secret-passage event",
+      "Path": "Actor/Actor-NPC-3-3",
+      "IconPath": "Icons/Actor-NPC-3-1"
+    },
+    {
+      "Type": 2,
+      "ID": 15,
+      "Name": "Clay Jar Shop",
+      "Info": "25 gold per stat reroll",
+      "Path": "Actor/Actor-NPC-5-1",
+      "IconPath": "Icons/Actor-NPC-5-2"
+    },
+    {
+      "Type": 2,
+      "ID": 16,
+      "Name": "Fire Jar Shop",
+      "Info": "50 gold per stat reroll",
+      "Path": "Actor/Actor-NPC-5-2",
+      "IconPath": "Icons/Actor-NPC-5-2"
+    },
+    {
+      "Type": 2,
+      "ID": 17,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 16 dialogue",
+      "Path": "Actor/Actor-NPC-1-5",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 18,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 16 Holy Water event",
+      "Path": "Actor/Actor-NPC-1-6",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 19,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 18 dialogue",
+      "Path": "Actor/Actor-NPC-1-7",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 20,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 21 dialogue",
+      "Path": "Actor/Actor-NPC-1-8",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 21,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 23 dialogue",
+      "Path": "Actor/Actor-NPC-1-9",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 22,
+      "Name": "Princess",
+      "Info": "",
+      "Path": "Actor/Actor-NPC-6-1",
+      "IconPath": "Icons/Actor-NPC-6-1"
+    },
+    {
+      "Type": 2,
+      "ID": 23,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 27 dialogue",
+      "Path": "Actor/Actor-NPC-1-10",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 24,
+      "Name": "Mysterious Merchant",
+      "Info": "Triggers Floor 28 stat-trade dialogue",
+      "Path": "Actor/Actor-NPC-2-7",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 25,
+      "Name": "Thief",
+      "Info": "Triggers Floor 29 secret-passage event",
+      "Path": "Actor/Actor-NPC-3-4",
+      "IconPath": "Icons/Actor-NPC-3-1"
+    },
+    {
+      "Type": 2,
+      "ID": 26,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 31 dialogue",
+      "Path": "Actor/Actor-NPC-1-11",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 27,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 31 shop and hints",
+      "Path": "Actor/Actor-NPC-2-8",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 28,
+      "Name": "Water Jar Shop",
+      "Info": "100 gold per stat reroll",
+      "Path": "Actor/Actor-NPC-5-3",
+      "IconPath": "Icons/Actor-NPC-5-2"
+    },
+    {
+      "Type": 2,
+      "ID": 29,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 33 dialogue",
+      "Path": "Actor/Actor-NPC-1-12",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 30,
+      "Name": "Thief",
+      "Info": "Floor 2 lower-right jail",
+      "Path": "Actor/Actor-NPC-3-5",
+      "IconPath": "Icons/Actor-NPC-3-1"
+    },
+    {
+      "Type": 2,
+      "ID": 31,
+      "Name": "Thief",
+      "Info": "Floor 35 secret-passage event",
+      "Path": "Actor/Actor-NPC-3-6",
+      "IconPath": "Icons/Actor-NPC-3-1"
+    },
+    {
+      "Type": 2,
+      "ID": 32,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 2 give-gold dialogue",
+      "Path": "Actor/Actor-NPC-1-13",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 33,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 2 +3%-stat dialogue",
+      "Path": "Actor/Actor-NPC-2-9",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 34,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 36 dialogue",
+      "Path": "Actor/Actor-NPC-1-14",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 35,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 37 dialogue",
+      "Path": "Actor/Actor-NPC-1-15",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 36,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 38 shop and hints",
+      "Path": "Actor/Actor-NPC-2-10",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 37,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 39 dialogue",
+      "Path": "Actor/Actor-NPC-1-16",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 38,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 39 shop and hints",
+      "Path": "Actor/Actor-NPC-2-11",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 39,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 42 dialogue",
+      "Path": "Actor/Actor-NPC-1-17",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 40,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 45 dialogue",
+      "Path": "Actor/Actor-NPC-1-18",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 41,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 45 shop and hints",
+      "Path": "Actor/Actor-NPC-2-12",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 42,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 46 dialogue",
+      "Path": "Actor/Actor-NPC-1-19",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 43,
+      "Name": "Gold Jar Shop",
+      "Info": "200 gold per stat reroll",
+      "Path": "Actor/Actor-NPC-5-4",
+      "IconPath": "Icons/Actor-NPC-5-2"
+    },
+    {
+      "Type": 2,
+      "ID": 44,
+      "Name": "Merchant",
+      "Info": "Triggers Floor 47 shop and hints",
+      "Path": "Actor/Actor-NPC-2-13",
+      "IconPath": "Icons/Actor-NPC-2-1"
+    },
+    {
+      "Type": 2,
+      "ID": 45,
+      "Name": "Old Man",
+      "Info": "Triggers Floor 48 dialogue",
+      "Path": "Actor/Actor-NPC-1-20",
+      "IconPath": "Icons/Actor-NPC-1-1"
+    },
+    {
+      "Type": 2,
+      "ID": 46,
+      "Name": "Thief",
+      "Info": "Floor 50 Demon King event",
+      "Path": "Actor/Actor-NPC-3-7",
+      "IconPath": "Icons/Actor-NPC-3-1"
+    },
+    {
+      "Type": 3,
+      "ID": 1,
+      "Name": "Green Slime",
+      "Info": "",
+      "Path": "Enemies/Enemy-Slime-1-1",
+      "IconPath": "Icons/Enemy-Slime-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 2,
+      "Name": "Red Slime",
+      "Info": "",
+      "Path": "Enemies/Enemy-Slime-2-1",
+      "IconPath": "Icons/Enemy-Slime-2-1"
+    },
+    {
+      "Type": 3,
+      "ID": 3,
+      "Name": "Small Bat",
+      "Info": "",
+      "Path": "Enemies/Enemy-Bat-1-1",
+      "IconPath": "Icons/Enemy-Bat-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 4,
+      "Name": "Apprentice Mage",
+      "Info": "",
+      "Path": "Enemies/Enemy-Master-1-1",
+      "IconPath": "Icons/Enemy-Master-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 5,
+      "Name": "Skeleton",
+      "Info": "",
+      "Path": "Enemies/Enemy-Bone-1-1",
+      "IconPath": "Icons/Enemy-Bone-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 6,
+      "Name": "Skeleton Soldier",
+      "Info": "",
+      "Path": "Enemies/Enemy-Bone-2-1",
+      "IconPath": "Icons/Enemy-Bone-2-1"
+    },
+    {
+      "Type": 3,
+      "ID": 7,
+      "Name": "Apprentice Guard",
+      "Info": "",
+      "Path": "Enemies/Enemy-Guard-1-1",
+      "IconPath": "Icons/Enemy-Guard-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 8,
+      "Name": "Skeleton Captain",
+      "Info": "Immune to bombs",
+      "Path": "Enemies/Enemy-Bone-3-1",
+      "IconPath": "Icons/Enemy-Bone-3-1"
+    },
+    {
+      "Type": 3,
+      "ID": 9,
+      "Name": "Great Slime",
+      "Info": "",
+      "Path": "Enemies/Enemy-Slime-3-1",
+      "IconPath": "Icons/Enemy-Slime-3-1"
+    },
+    {
+      "Type": 3,
+      "ID": 10,
+      "Name": "Great Bat",
+      "Info": "",
+      "Path": "Enemies/Enemy-Bat-2-1",
+      "IconPath": "Icons/Enemy-Bat-2-1"
+    },
+    {
+      "Type": 3,
+      "ID": 11,
+      "Name": "High Mage",
+      "Info": "",
+      "Path": "Enemies/Enemy-Master-2-1",
+      "IconPath": "Icons/Enemy-Master-2-1"
+    },
+    {
+      "Type": 3,
+      "ID": 12,
+      "Name": "Orc",
+      "Info": "Takes double damage from the Cross",
+      "Path": "Enemies/Enemy-Orc-1-1",
+      "IconPath": "Icons/Enemy-Orc-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 13,
+      "Name": "Orc Warrior",
+      "Info": "Takes double damage from the Cross",
+      "Path": "Enemies/Enemy-Orc-2-1",
+      "IconPath": "Icons/Enemy-Orc-2-1"
+    },
+    {
+      "Type": 3,
+      "ID": 14,
+      "Name": "Stone Man",
+      "Info": "",
+      "Path": "Enemies/Enemy-Stone-1-1",
+      "IconPath": "Icons/Enemy-Stone-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 15,
+      "Name": "Giant Octopus",
+      "Info": "Immune to bombs",
+      "Path": "Enemies/Enemy-Octopus-1-1",
+      "IconPath": "Icons/Enemy-Octopus-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 16,
+      "Name": "Vampire",
+      "Info": "Takes double damage from the Cross",
+      "Path": "Enemies/Enemy-Bat-4-1",
+      "IconPath": "Icons/Enemy-Bat-4-1"
+    },
+    {
+      "Type": 3,
+      "ID": 17,
+      "Name": "Archmage",
+      "Info": "Immune to bombs",
+      "Path": "Enemies/Enemy-Master-5-1",
+      "IconPath": "Icons/Enemy-Master-5-1"
+    },
+    {
+      "Type": 3,
+      "ID": 18,
+      "Name": "Ghost Warrior",
+      "Info": "",
+      "Path": "Enemies/Enemy-Bone-4-1",
+      "IconPath": "Icons/Enemy-Bone-4-1"
+    },
+    {
+      "Type": 3,
+      "ID": 19,
+      "Name": "Warrior",
+      "Info": "",
+      "Path": "Enemies/Enemy-Warrior-1-1",
+      "IconPath": "Icons/Enemy-Warrior-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 20,
+      "Name": "Ghost",
+      "Info": "",
+      "Path": "Enemies/Enemy-Ghost-1-1",
+      "IconPath": "Icons/Enemy-Ghost-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 21,
+      "Name": "Veteran Guard",
+      "Info": "",
+      "Path": "Enemies/Enemy-Guard-2-1",
+      "IconPath": "Icons/Enemy-Guard-2-1"
+    },
+    {
+      "Type": 3,
+      "ID": 22,
+      "Name": "Two-Handed Swordsman",
+      "Info": "",
+      "Path": "Enemies/Enemy-Swordman-1-1",
+      "IconPath": "Icons/Enemy-Swordman-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 23,
+      "Name": "Magic Dragon",
+      "Info": "Immune to bombs; takes double damage from the Dragon Slayer",
+      "Path": "Enemies/Enemy-Dragon-1-1",
+      "IconPath": "Icons/Enemy-Dragon-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 24,
+      "Name": "Knight",
+      "Info": "",
+      "Path": "Enemies/Enemy-Knight-2-1",
+      "IconPath": "Icons/Enemy-Knight-2-1"
+    },
+    {
+      "Type": 3,
+      "ID": 25,
+      "Name": "Knight Captain",
+      "Info": "Immune to bombs",
+      "Path": "Enemies/Enemy-Knight-1-1",
+      "IconPath": "Icons/Enemy-Knight-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 26,
+      "Name": "Apprentice Wizard",
+      "Info": "Adjacent tiles deal 100 damage; the Sacred Shield blocks it",
+      "Path": "Enemies/Enemy-Master-3-1",
+      "IconPath": "Icons/Enemy-Master-3-1"
+    },
+    {
+      "Type": 3,
+      "ID": 27,
+      "Name": "High Wizard",
+      "Info": "Adjacent tiles deal 200 damage; the Sacred Shield blocks it; player retreats one tile after triggering",
+      "Path": "Enemies/Enemy-Master-4-1",
+      "IconPath": "Icons/Enemy-Master-4-1"
+    },
+    {
+      "Type": 3,
+      "ID": 28,
+      "Name": "Slime King",
+      "Info": "",
+      "Path": "Enemies/Enemy-Slime-4-1",
+      "IconPath": "Icons/Enemy-Slime-4-1"
+    },
+    {
+      "Type": 3,
+      "ID": 29,
+      "Name": "Vampire Bat",
+      "Info": "",
+      "Path": "Enemies/Enemy-Bat-3-1",
+      "IconPath": "Icons/Enemy-Bat-3-1"
+    },
+    {
+      "Type": 3,
+      "ID": 30,
+      "Name": "Black Knight",
+      "Info": "",
+      "Path": "Enemies/Enemy-Knight-3-1",
+      "IconPath": "Icons/Enemy-Knight-3-1"
+    },
+    {
+      "Type": 3,
+      "ID": 31,
+      "Name": "Magic Guard",
+      "Info": "Standing between two guards halves HP; the Sacred Shield blocks it",
+      "Path": "Enemies/Enemy-MasterGuard-1-1",
+      "IconPath": "Icons/Enemy-MasterGuard-1-1"
+    },
+    {
+      "Type": 3,
+      "ID": 32,
+      "Name": "Elite Guard",
+      "Info": "",
+      "Path": "Enemies/Enemy-Guard-3-1",
+      "IconPath": "Icons/Enemy-Guard-3-1"
+    },
+    {
+      "Type": 3,
+      "ID": 33,
+      "Name": "Demon King",
+      "Info": "Stats weakened by a special event",
+      "Path": "Enemies/Enemy-Devil-2-1",
+      "IconPath": "Icons/Enemy-Devil-2-1"
+    },
+    {
+      "Type": 3,
+      "ID": 34,
+      "Name": "Demon King (True Form)",
+      "Info": "Appears on Floor 50",
+      "Path": "Enemies/Enemy-Devil-2-2",
+      "IconPath": "Icons/Enemy-Devil-2-1"
+    }
+  ]
+}

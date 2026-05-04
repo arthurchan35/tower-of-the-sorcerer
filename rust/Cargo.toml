@@ -1,0 +1,19 @@
+[package]
+name = "tower_of_the_sorcerer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+bevy = "0.18.1"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+serde_repr = "0.1.20"
+
+# Bevy compiles painfully slowly without optimized dependencies even in dev.
+# This makes the *first* build slow but makes incremental builds of our own code fast.
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3

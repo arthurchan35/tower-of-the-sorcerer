@@ -1,0 +1,8 @@
+# Rust build artifacts (cargo's output dir; can be hundreds of MB after first build)
+/target
+
+# Rustfmt backup files
+**/*.rs.bk
+
+# macOS Finder metadata
+.DS_Store

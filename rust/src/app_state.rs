@@ -1,0 +1,9 @@
+use bevy::prelude::*;
+
+#[derive(States, Clone, Copy, Debug, Default, Eq, Hash, PartialEq)]
+pub enum AppState {
+    #[default]
+    Playing,
+    FloorCleared,
+    GameOver,
+}

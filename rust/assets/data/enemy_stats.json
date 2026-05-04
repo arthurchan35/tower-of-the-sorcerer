@@ -1,0 +1,276 @@
+{
+  "target": [
+    {
+      "id": 1,
+      "name": "Green Slime",
+      "health": 35,
+      "attack": 18,
+      "defense": 1,
+      "gold": 1
+    },
+    {
+      "id": 2,
+      "name": "Red Slime",
+      "health": 45,
+      "attack": 20,
+      "defense": 2,
+      "gold": 2
+    },
+    {
+      "id": 3,
+      "name": "Small Bat",
+      "health": 35,
+      "attack": 38,
+      "defense": 3,
+      "gold": 3
+    },
+    {
+      "id": 4,
+      "name": "Apprentice Mage",
+      "health": 60,
+      "attack": 32,
+      "defense": 8,
+      "gold": 5
+    },
+    {
+      "id": 5,
+      "name": "Skeleton",
+      "health": 50,
+      "attack": 42,
+      "defense": 6,
+      "gold": 6
+    },
+    {
+      "id": 6,
+      "name": "Skeleton Soldier",
+      "health": 55,
+      "attack": 52,
+      "defense": 12,
+      "gold": 8
+    },
+    {
+      "id": 7,
+      "name": "Apprentice Guard",
+      "health": 50,
+      "attack": 48,
+      "defense": 22,
+      "gold": 12
+    },
+    {
+      "id": 8,
+      "name": "Skeleton Captain",
+      "health": 100,
+      "attack": 65,
+      "defense": 15,
+      "gold": 30
+    },
+    {
+      "id": 9,
+      "name": "Great Slime",
+      "health": 130,
+      "attack": 60,
+      "defense": 3,
+      "gold": 8
+    },
+    {
+      "id": 10,
+      "name": "Great Bat",
+      "health": 60,
+      "attack": 100,
+      "defense": 8,
+      "gold": 12
+    },
+    {
+      "id": 11,
+      "name": "High Mage",
+      "health": 100,
+      "attack": 95,
+      "defense": 30,
+      "gold": 22
+    },
+    {
+      "id": 12,
+      "name": "Orc",
+      "health": 260,
+      "attack": 85,
+      "defense": 5,
+      "gold": 18
+    },
+    {
+      "id": 13,
+      "name": "Orc Warrior",
+      "health": 320,
+      "attack": 120,
+      "defense": 15,
+      "gold": 30
+    },
+    {
+      "id": 14,
+      "name": "Stone Man",
+      "health": 20,
+      "attack": 100,
+      "defense": 68,
+      "gold": 28
+    },
+    {
+      "id": 15,
+      "name": "Giant Octopus",
+      "health": 1200,
+      "attack": 180,
+      "defense": 20,
+      "gold": 100
+    },
+    {
+      "id": 16,
+      "name": "Vampire",
+      "health": 444,
+      "attack": 199,
+      "defense": 66,
+      "gold": 144
+    },
+    {
+      "id": 17,
+      "name": "Archmage",
+      "health": 4500,
+      "attack": 560,
+      "defense": 310,
+      "gold": 1000
+    },
+    {
+      "id": 18,
+      "name": "Ghost Warrior",
+      "health": 220,
+      "attack": 180,
+      "defense": 30,
+      "gold": 35
+    },
+    {
+      "id": 19,
+      "name": "Warrior",
+      "health": 210,
+      "attack": 200,
+      "defense": 65,
+      "gold": 45
+    },
+    {
+      "id": 20,
+      "name": "Ghost",
+      "health": 320,
+      "attack": 140,
+      "defense": 20,
+      "gold": 30
+    },
+    {
+      "id": 21,
+      "name": "Veteran Guard",
+      "health": 100,
+      "attack": 180,
+      "defense": 110,
+      "gold": 100
+    },
+    {
+      "id": 22,
+      "name": "Two-Handed Swordsman",
+      "health": 100,
+      "attack": 680,
+      "defense": 50,
+      "gold": 55
+    },
+    {
+      "id": 23,
+      "name": "Magic Dragon",
+      "health": 1500,
+      "attack": 600,
+      "defense": 250,
+      "gold": 800
+    },
+    {
+      "id": 24,
+      "name": "Knight",
+      "health": 160,
+      "attack": 230,
+      "defense": 105,
+      "gold": 65
+    },
+    {
+      "id": 25,
+      "name": "Knight Captain",
+      "health": 120,
+      "attack": 150,
+      "defense": 50,
+      "gold": 100
+    },
+    {
+      "id": 26,
+      "name": "Apprentice Wizard",
+      "health": 220,
+      "attack": 370,
+      "defense": 110,
+      "gold": 80
+    },
+    {
+      "id": 27,
+      "name": "High Wizard",
+      "health": 200,
+      "attack": 380,
+      "defense": 130,
+      "gold": 90
+    },
+    {
+      "id": 28,
+      "name": "Slime King",
+      "health": 360,
+      "attack": 310,
+      "defense": 20,
+      "gold": 40
+    },
+    {
+      "id": 29,
+      "name": "Vampire Bat",
+      "health": 200,
+      "attack": 390,
+      "defense": 90,
+      "gold": 50
+    },
+    {
+      "id": 30,
+      "name": "Black Knight",
+      "health": 180,
+      "attack": 430,
+      "defense": 210,
+      "gold": 120
+    },
+    {
+      "id": 31,
+      "name": "Magic Guard",
+      "health": 230,
+      "attack": 450,
+      "defense": 100,
+      "gold": 100
+    },
+    {
+      "id": 32,
+      "name": "Elite Guard",
+      "health": 180,
+      "attack": 460,
+      "defense": 360,
+      "gold": 200
+    },
+    {
+      "id": 33,
+      "name": "Demon King",
+      "health": 8000,
+      "attack": 5000,
+      "defense": 1000,
+      "gold": 500
+    },
+    {
+      "id": 34,
+      "name": "Demon King (True Form)",
+      "health": 5000,
+      "attack": 1580,
+      "defense": 190,
+      "gold": 500
+    }
+  ]
+}
