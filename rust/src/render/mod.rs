@@ -1,3 +1,4 @@
+pub mod animation;
 pub mod hud;
 pub mod sprite_catalog;
 pub mod tiles;
@@ -37,7 +38,9 @@ impl Plugin for RenderPlugin {
             Update,
             (
                 tiles::despawn_cleared_tiles,
-                tiles::sync_player_transform,
+                animation::start_player_walk,
+                animation::tick_player_walk.after(animation::start_player_walk),
+                animation::animate_sprites.after(animation::tick_player_walk),
                 hud::sync_stats,
                 hud::sync_status,
             ),

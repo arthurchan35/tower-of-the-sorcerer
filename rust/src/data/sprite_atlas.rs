@@ -2,9 +2,9 @@ use std::collections::HashMap;
 
 use serde::Deserialize;
 
-/// Schema of `assets/data/sprite_atlas.json`. Each `entry` names a logical
-/// sprite (e.g. `"green_slime"`) and points at a (col, row) cell in one of the
-/// declared `sheets`. All cells are square; the side length is `tile_size`.
+/// Schema of `assets/data/sprite_atlas.json`. Each entry is a named animation:
+/// 1+ frames in the same spritesheet plus a frames-per-second cycle rate.
+/// `fps == 0.0` means static (no cycling); a single-frame entry is a still image.
 #[derive(Clone, Debug, Deserialize)]
 pub struct AtlasFile {
     pub tile_size: u32,
@@ -21,8 +21,10 @@ pub struct SheetDims {
 #[derive(Clone, Debug, Deserialize)]
 pub struct AtlasEntry {
     pub sheet: String,
-    pub col: u32,
-    pub row: u32,
+    /// Each `[col, row]` pair selects one cell of the sheet (0-indexed, top-left origin).
+    pub frames: Vec<[u32; 2]>,
+    #[serde(default)]
+    pub fps: f32,
 }
 
 pub fn load_sprite_atlas(json: &str) -> anyhow::Result<AtlasFile> {
@@ -39,10 +41,14 @@ mod tests {
         let atlas = load_sprite_atlas(json).expect("sprite_atlas.json must parse");
         assert!(atlas.tile_size > 0);
         assert!(!atlas.sheets.is_empty());
-        // Floor-1 must at minimum have the player and the green slime resolved.
+
         let player = atlas.entries.get("player").expect("player entry");
+        let walk = atlas.entries.get("player_walk").expect("player_walk entry");
         let slime = atlas.entries.get("green_slime").expect("green_slime entry");
-        assert!(atlas.sheets.contains_key(&player.sheet));
-        assert!(atlas.sheets.contains_key(&slime.sheet));
+        assert_eq!(player.frames.len(), 1, "idle is single frame");
+        assert!(walk.frames.len() >= 2, "walk needs multiple frames");
+        assert!(walk.fps > 0.0, "walk needs nonzero fps");
+        assert_eq!(slime.frames.len(), 2, "slime bobbing is 2 frames");
+        assert!(slime.fps > 0.0);
     }
 }

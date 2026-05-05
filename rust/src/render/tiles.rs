@@ -2,7 +2,7 @@ use bevy::prelude::*;
 
 use crate::game::{DoorColor, Floor, ItemKind, Player, Tile, TilePos, GRID_SIZE};
 
-use super::{sprite_catalog::SpriteCatalog, TILE_PX};
+use super::{animation::SpriteAnimation, sprite_catalog::SpriteCatalog, TILE_PX};
 
 /// Marker component for the per-tile sprites spawned at the start of a floor.
 /// Lets `despawn_cleared_tiles` filter positively instead of relying on
@@ -45,15 +45,21 @@ pub fn spawn_camera_and_tiles(
     ));
 
     for (pos, tile) in floor.iter() {
-        let sprite = tile_atlas_key(tile)
-            .and_then(|key| catalog.make_sprite(key, TILE_PX))
+        let key = tile_atlas_key(tile);
+        let sprite = key
+            .and_then(|k| catalog.make_sprite(k, TILE_PX))
             .unwrap_or_else(|| fallback_color_sprite(tile));
-        commands.spawn((
+        let mut entity = commands.spawn((
             sprite,
             Transform::from_translation(tile_to_world(pos)),
             pos,
             TileSprite,
         ));
+        if let Some((frames, fps)) = key.and_then(|k| catalog.animation(k)) {
+            if frames.len() > 1 && fps > 0.0 {
+                entity.insert(SpriteAnimation::new(frames, fps));
+            }
+        }
     }
 }
 
@@ -151,12 +157,3 @@ pub fn despawn_cleared_tiles(
     }
 }
 
-/// Mirror the Player entity's authoritative `TilePos` onto its `Transform`.
-pub fn sync_player_transform(
-    mut player: Query<(&TilePos, &mut Transform), (With<Player>, Changed<TilePos>)>,
-) {
-    let Ok((&pos, mut tf)) = player.single_mut() else {
-        return;
-    };
-    tf.translation = tile_to_world(pos).with_z(1.0);
-}

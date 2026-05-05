@@ -60,8 +60,9 @@ rust/
     │   └── mod.rs          GamePlugin, GameSetup SystemSet, Player marker, StatusMessage resource
     ├── input.rs            InputPlugin, MoveIntent message, keyboard system
     └── render/             Bevy 2D rendering layer (the only Bevy-coupled code besides input + plugins)
-        ├── sprite_catalog.rs SpriteCatalog resource, atlas loader (TextureAtlasLayout + image handles)
-        ├── tiles.rs        camera, tile sprites via SpriteCatalog (color fallback when key missing), player sprite, sync systems
+        ├── sprite_catalog.rs SpriteCatalog resource, atlas loader (TextureAtlasLayout + image handles, frame indices, fps)
+        ├── animation.rs    SpriteAnimation (looping frame cycle) + TileTransition (player tile-to-tile slide) components and their systems
+        ├── tiles.rs        camera, tile sprites via SpriteCatalog (color fallback when key missing), player sprite, despawn-on-floor-change
         ├── hud.rs          UI Node with stats label + status label
         └── mod.rs          RenderPlugin (Startup + Update + OnEnter(state) handlers, RenderSetup SystemSet)
 ```
@@ -77,6 +78,7 @@ rust/
 - **Bevy 0.18 events**: this version renamed events to messages — `Event` → `Message`, `EventReader/Writer` → `MessageReader/Writer`, `add_event` → `add_message`. Use the new names.
 - **Asset loading**: data files (`map.json`, `enemy_stats.json`, `sprite_atlas.json`) are `include_str!`-ed into the binary at compile time. Sprite PNGs in `assets/sprites/` are loaded at runtime via Bevy's `AssetServer`. Switch the data files to `AssetServer` only when hot-reload becomes worthwhile.
 - **Sprite atlas**: 32px source art is rendered at `TILE_PX = 64` (2× integer scale) with `ImagePlugin::default_nearest()` for crisp pixel-art. The `SpriteCatalog` resource is built in a Startup system before `spawn_camera_and_tiles` / `outfit_player`; both use `RenderSetup` SystemSet ordering to depend on it. Spritesheets are 4×4 grids of 32×32 frames (with `Environment-Stairs-Up.png` as a 1×1 exception); per-sheet grid dimensions live in `sprite_atlas.json`.
+- **Animations**: each atlas entry declares `frames: [[col, row], ...]` and `fps`. Monsters get a `SpriteAnimation` component at spawn that cycles their idle bobbing frames forever. The Player has a separate `player_walk` atlas entry; its frames are attached only during movement. `TileTransition` lerps the Player's `Transform` between tiles over `PLAYER_WALK_DURATION`, while `SpriteAnimation` cycles the walk frames. Both components are removed when the slide completes and the Player snaps back to its idle frame. Game logic stays instantaneous (`TilePos` snaps); the visual layer plays catch-up.
 
 ### Floor-1 enemy stats
 

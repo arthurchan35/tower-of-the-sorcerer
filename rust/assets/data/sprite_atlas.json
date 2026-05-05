@@ -53,83 +53,209 @@
   "entries": {
     "player": {
       "sheet": "Actor01-Braver01.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ]
+      ],
+      "fps": 0.0
     },
     "green_slime": {
       "sheet": "Monster01-01.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "fps": 2.0
     },
     "red_slime": {
       "sheet": "Monster01-01.png",
-      "col": 0,
-      "row": 1
+      "frames": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "fps": 2.0
     },
     "small_bat": {
       "sheet": "Monster03-01.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "fps": 3.0
     },
     "apprentice_mage": {
       "sheet": "Monster06-01.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "fps": 2.0
     },
     "skeleton": {
       "sheet": "Monster02-01.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "fps": 2.0
     },
     "skeleton_soldier": {
       "sheet": "Monster02-01.png",
-      "col": 0,
-      "row": 1
+      "frames": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "fps": 2.0
     },
     "wall": {
       "sheet": "Event01-Wall01.png",
-      "col": 1,
-      "row": 0
+      "frames": [
+        [
+          1,
+          0
+        ]
+      ],
+      "fps": 0.0
     },
     "door_yellow": {
       "sheet": "Event01-Door01.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ]
+      ],
+      "fps": 0.0
     },
     "yellow_key": {
       "sheet": "Item01-01.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ]
+      ],
+      "fps": 0.0
     },
     "small_potion": {
       "sheet": "Item01-02.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ]
+      ],
+      "fps": 0.0
     },
     "large_potion": {
       "sheet": "Item01-02.png",
-      "col": 1,
-      "row": 0
+      "frames": [
+        [
+          1,
+          0
+        ]
+      ],
+      "fps": 0.0
     },
     "red_gem": {
       "sheet": "Item01-Gem01.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ]
+      ],
+      "fps": 0.0
     },
     "blue_gem": {
       "sheet": "Item01-Gem01.png",
-      "col": 1,
-      "row": 0
+      "frames": [
+        [
+          1,
+          0
+        ]
+      ],
+      "fps": 0.0
     },
     "pharaoh_scepter": {
       "sheet": "Item01-05.png",
-      "col": 2,
-      "row": 3
+      "frames": [
+        [
+          2,
+          3
+        ]
+      ],
+      "fps": 0.0
+    },
+    "player_walk": {
+      "sheet": "Actor01-Braver01.png",
+      "frames": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "fps": 8.0
     },
     "stairs_up": {
       "sheet": "Environment-Stairs-Up.png",
-      "col": 0,
-      "row": 0
+      "frames": [
+        [
+          0,
+          0
+        ]
+      ],
+      "fps": 0.0
     }
   }
 }
